@@ -16,12 +16,13 @@ source:
     - patches/Global.h.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('c') }}
+  host:
 
 test:
   commands:
