@@ -16,7 +16,7 @@ source:
     - patches/Global.h.patch
 
 build:
-  number: 1
+  number: 1000
   skip: true  # [win]
 
 requirements:
