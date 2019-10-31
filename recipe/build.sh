@@ -1,9 +1,7 @@
 #!/bin/bash
 
-export LD_LIBRARY_PATH=$PREFIX/lib:$LD_LIBRARY_PATH
-export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
-
 cp -f GNUmakefile Makefile
+mkdir -p "${PREFIX}/bin"
 
 # Building PALP optimized for different dimensions
 for dim in 4 5 6 11; do
