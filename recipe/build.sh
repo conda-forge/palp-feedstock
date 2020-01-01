@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export CPPFLAGS=$(echo "${CPPFLAGS}" | sed "s/-DNDEBUG//g")
+export CFLAGS=$(echo "${CFLAGS}" | sed "s/-DNDEBUG//g")
+
 cp -f GNUmakefile Makefile
 mkdir -p "${PREFIX}/bin"
 
