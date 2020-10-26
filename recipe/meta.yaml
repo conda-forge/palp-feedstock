@@ -1,4 +1,4 @@
-{% set version = "2.2" %}
+{% set version = "2.20" %}
 {% set name = "palp" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/{{ name }}-{{ version }}.tar.gz
-  sha256: d36a689c48418ab675ca1dce0ccd3643e4cfdac17ac190be0633d4e63c5bdddd
+  sha256: 723e89e78b2d3d94a720dd770c11b932b3e6b56f8a49e0bf3621c776f7a02ce0
   patches:
     # patch makefile so that we can append to CFLAGS
     - patches/makefile.patch
