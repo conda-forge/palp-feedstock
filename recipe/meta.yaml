@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/{{ name }}-{{ version }}.tar.gz
-  sha256: 723e89e78b2d3d94a720dd770c11b932b3e6b56f8a49e0bf3621c776f7a02ce0
+  sha256: f392ecb090f434700fe7709034645d810e630c512c575ceb2833bdcbafa7aae7
   patches:
     # patch makefile so that we can append to CFLAGS
     - patches/makefile.patch
