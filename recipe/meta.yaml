@@ -1,4 +1,4 @@
-{% set version = "2.1" %}
+{% set version = "2.20" %}
 {% set name = "palp" %}
 
 package:
@@ -8,15 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/{{ name }}-{{ version }}.tar.gz
-  sha256: 156202714f4613dc920fff462bac153b10d9318f147a8b9ab01b65e9a93171f7
-  patches:
-    # patch makefile so that we can append to CFLAGS
-    - patches/makefile.patch
-    # define POLY_Dmax only if undefined
-    - patches/Global.h.patch
+  sha256: f392ecb090f434700fe7709034645d810e630c512c575ceb2833bdcbafa7aae7
 
 build:
-  number: 1001
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -31,7 +26,7 @@ test:
 
 about:
   home: http://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html
-  license: GPLv2+
+  license: GPL-2.0-later
   license_file: COPYING
   summary: PALP - a Package for Analyzing Lattice Polytopes
 
