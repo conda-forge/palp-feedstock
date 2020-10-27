@@ -9,11 +9,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/{{ name }}-{{ version }}.tar.gz
   sha256: f392ecb090f434700fe7709034645d810e630c512c575ceb2833bdcbafa7aae7
-  patches:
-    # patch makefile so that we can append to CFLAGS
-    - patches/makefile.patch
-    # define POLY_Dmax only if undefined
-    - patches/Global.h.patch
 
 build:
   number: 0
