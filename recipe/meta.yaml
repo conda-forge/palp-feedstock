@@ -1,4 +1,4 @@
-{% set version = "2.20" %}
+{% set version = "2.21" %}
 {% set name = "palp" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/{{ name }}-{{ version }}.tar.gz
-  sha256: f392ecb090f434700fe7709034645d810e630c512c575ceb2833bdcbafa7aae7
+  sha256: 7e4a7bf219998a844c0bcce0a176e49d0743cb4b505a0e195329bf2ec196ddd7
 
 build:
   number: 0
