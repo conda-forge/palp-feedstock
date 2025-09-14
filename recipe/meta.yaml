@@ -26,7 +26,7 @@ test:
 
 about:
   home: http://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html
-  license: GPL-2.0-later
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: PALP - a Package for Analyzing Lattice Polytopes
 
