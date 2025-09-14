@@ -1,4 +1,4 @@
-{% set version = "2.20" %}
+{% set version = "2.21" %}
 {% set name = "palp" %}
 
 package:
@@ -6,9 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/palp/{{ name }}-{{ version }}.tar.gz
-  sha256: f392ecb090f434700fe7709034645d810e630c512c575ceb2833bdcbafa7aae7
+  sha256: 7e4a7bf219998a844c0bcce0a176e49d0743cb4b505a0e195329bf2ec196ddd7
 
 build:
   number: 0
@@ -17,6 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - make
   host:
 
@@ -26,10 +26,11 @@ test:
 
 about:
   home: http://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html
-  license: GPL-2.0-later
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: PALP - a Package for Analyzing Lattice Polytopes
 
 extra:
   recipe-maintainers:
     - isuruf
+    - saraedum
