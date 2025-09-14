@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/palp-feedstock/
 
 Home: http://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html
 
-Package license: GPL-2.0-later
+Package license: GPL-2.0-or-later
 
 Summary: PALP - a Package for Analyzing Lattice Polytopes
 
@@ -191,4 +191,5 @@ Feedstock Maintainers
 =====================
 
 * [@isuruf](https://github.com/isuruf/)
+* [@saraedum](https://github.com/saraedum/)
 
